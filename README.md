@@ -52,10 +52,10 @@ http://127.0.0.1:5000/
 
 ## Authors
 
- **Immanuel Azarya Garibaldi - 001202100116** - Created Front End - [i8g9](https://github.com/i8g9)
- **Muhammad Yusuf Kahlil Gibran - 001202100167** - Created Presentation
- **Richie Lie Gunawan - 0012021000093 - Created Back End
- **Tristan Jonah Pupella - 001202100108 - Created Diagram
+ + **Immanuel Azarya Garibaldi - 001202100116** - Created Front End - [i8g9](https://github.com/i8g9)
+ + **Muhammad Yusuf Kahlil Gibran - 001202100167** - Created Presentation
+ + **Richie Lie Gunawan - 0012021000093 - Created Back End
+ + **Tristan Jonah Pupella - 001202100108 - Created Diagram
 
 
 ## License
