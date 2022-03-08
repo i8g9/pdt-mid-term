@@ -1,0 +1,47 @@
+body{
+    align-content: center;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 300%;
+}    
+
+input{
+    margin: auto;
+}
+
+div{
+    margin: auto;
+    text-align: center;
+}
+
+.button{
+    background-color: #fff;
+    border-radius: 15px;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 3px;
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 33%;
+}
+
+.button:hover{
+    color: #3ad1f0;
+}
+
+.homeButt{
+    bottom: 10px;
+    position: absolute;
+}
+
+.result{
+    font-size: xx-large;
+}
+
+a{
+    text-decoration: none;
+}

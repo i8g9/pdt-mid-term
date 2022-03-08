@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../static/index.js"></script>
+    <link rel="stylesheet" href="../static/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <center><p>Tax Calculation</p></center>
+
+    <div>
+        <div>Input your Monthly Income: </div>
+        <input type="number" id="mIncome" value="12000000">
+        <div>Input your Extra Incomes: </div>
+        <input type="number" id="exIncome" value="5700000">
+        <div>Your current Status:</div>
+        <select name="status" id="status">
+            <option value="TK0">TK0 (Not Married, No Responsibilities)</option>
+            <option value="TK1">TK1 (Not Married, 1 Responsibility)</option>
+            <option value="TK2">TK2 (Not Married, 2 Responsibilities)</option>
+            <option value="K0">K0 (Married, No responsibilities)</option>
+            <option value="K1">K1 (Married, 1 responsibility)</option>
+            <option value="K2">K2 (Married, 2 responsibilities)</option>
+            <option value="K3">K3 (Married, 3 responsibilities)</option>
+        </select>
+        <div>Do you own an NPWP:</div>
+        <select name="npwp" id="npwp">
+            <option value="y">Yes</option>
+            <option value="n">No</option>
+        </select><br>
+        <input type="button" onclick="taxCalc()" value="Calculate">
+    </div>
+
+    <br>
+
+    <div>Your Monthly Tax will be:</div>
+    <div id="result" class="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../static/index.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="centered">
+            <h1>Tax Calculator</h1>
+            <h2>Monthly income : </h2>
+            <input type="number" name="mIncome" id="mIncome" class="mIncome" placeholder="Please input your monthly income">
+            <h2>Extra Income : </h2>
+            <input type="number" name="exIncome" id="exIncome" class="exIncome" placeholder="Input 0 if none">
+            <h2>Current Status : </h2>
+            <select name="status" id="status" class="status" required>
+                <option value="TK0">TK0 (Not Married, No Responsibilities)</option>
+                <option value="TK1">TK1 (Not Married, 1 Responsibility)</option>
+                <option value="TK2">TK2 (Not Married, 2 Responsibilities)</option>
+                <option value="K0">K0 (Married, No responsibilities)</option>
+                <option value="K1">K1 (Married, 1 responsibility)</option>
+                <option value="K2">K2 (Married, 2 responsibilities)</option>
+                <option value="K3">K3 (Married, 3 responsibilities)</option>    
+            </select>
+            <h2>Do you own Taxpayer Identification Number (NPWP) ? </h2>
+            <select name="npwp" id="npwp" class="npwp">
+                <option value="y">Yes</option>
+                <option value="n">No</option>    
+            </select>
+            <button onclick="taxCalc()" class="calculateBtn">Calculate Tax</button>
+            <span>Your monthly tax is : </span><span id="result" class="result"></span>
+        </div>
+    </div>
+</body>
+</html>
