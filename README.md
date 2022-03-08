@@ -1,5 +1,7 @@
 ![project screenshot](./projectscreenshot.png "project screenshot")
 
+This app is available to see at : https://pdt-mid-term.herokuapp.com/
+
 # PDT MID TERM
 
 This Web App is made in order to satisfy the assigment from the Pyschology and Design Thinking Course.
