@@ -36,7 +36,7 @@ function taxCalc(){
         }
     }).then(
         (response) => {
-            var result = response.data;
+            var result = response.data ;
             console.log(response);
             document.getElementById('result').innerHTML = result['result'];
         },
