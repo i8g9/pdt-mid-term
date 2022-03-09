@@ -1,3 +1,15 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+-moz-appearance: textfield;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +38,12 @@ a {
     background-color: #121212;
 }
 
+.gradient {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .centered {
     display: grid;
     place-content: center;
@@ -40,32 +58,52 @@ span {
 
 input {
     padding: 16px 32px;
-    border: 1px solid;
+    border: none;
     border-radius: 5em;
-    background-color: #fafafa;
+    background-color: #343434;
+    color: #fafafa;
     margin: 1rem;
+    font-size: 18px;
 }
 
 input:focus {
-    border: 1px solid salmon;
-    font-weight: 400;
+    outline: none;
+    background-color: #343434;
+    color: #fafafa;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
 }
 
 select {
     padding: 16px 32px;
-    border: 1px solid;
     border-radius: 5em;
-    background-color: #fafafa;
+    background-color: #343434;
+    border: none;
+    color: #fafafa;
     margin: 1rem;
+    font-size: 18px;
 }
 
 .calculateBtn {
-    background-color: #02c39a;
     border: none;
     padding: 16px 32px;
     color: #fafafa;
     border-radius: 5em;
     cursor: pointer;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    font-weight: bolder;
+}
+
+.calculateBtn:hover {
+    background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+    border: 0;
+    color: #fafafa;
 }
 
 .result {
