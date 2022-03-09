@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, redirect
+import babel.numbers
 
 
 app = Flask(__name__)
@@ -56,8 +57,10 @@ def taxCalc():
 
         if npwp == 'n':
             result = result + (result * 0.2)
-        
+
+        result = babel.numbers.format_currency(result, "IDR", locale='id_ID') 
         response = {'status': 200, 'result': result, 'pkp': pkp, 'regsub': regSub, 'posfee': posFee, 'ptkp': ptkp}
     else:
         response = {'status': 500, 'result': 'Error'}
+    
     return jsonify(response)
