@@ -33,6 +33,7 @@ a {
 
 .main {
     height: 100vh;
+    padding: 7em;
     display: grid;
     place-content: center;
     background-color: #121212;
